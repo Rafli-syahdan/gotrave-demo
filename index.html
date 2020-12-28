@@ -38,51 +38,33 @@
 
         <!-- Menu -->
         <div class="collapse navbar-collapse" id="navb">
-          <ul class="navbar-nav ml-auto mr-3">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-md-2">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item mx-md-2">
-              <a class="nav-link" href="#">Travel Package</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbardrop"
-                data-toggle="dropdown"
-              >
-                Services
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
-              </div>
+              <a class="nav-link" href="#popular">Travel Package</a>
             </li>
             <li class="nav-item mx-md-2">
-              <a class="nav-link" href="#">Testimonial</a>
+              <a class="nav-link" href="#testimonialHeading">Testimonial</a>
+            </li>
+            <li class="nav-item mx-md-2">
+              <a class="nav-link" href="#contactMaps">Contact</a>
             </li>
           </ul>
 
           <!-- Mobile button -->
           <form class="form-inline d-sm-block d-md-none">
-            <button class="btn btn-login my-2 my-sm-0">
-              Masuk
-            </button>
           </form>
           <!-- Desktop Button -->
           <form class="form-inline my-2 my-lg-0 d-none d-md-block">
-            <button class="btn btn-login btn-navbar-right my-2 my-sm-0 px-4">
-              Masuk
-            </button>
           </form>
         </div>
       </nav>
     </div>
 
     <!-- Header -->
-    <header class="text-center">
+    <header class="text-center" id="home">
       <h1>
         Explore Beautiful Indonesia
         <br>
@@ -93,9 +75,6 @@
         <br>
         is that you have never seen before.
       </p>
-      <a href="#" class="btn btn-get-started px-4 mt-4">
-        Get Started
-      </a>
     </header>
 
     <!-- Content -->
@@ -126,7 +105,7 @@
         <div class="container">
           <div class="row">
             <div class="col text-center section-popular-heading">
-              <h2>Popular Travel</h2>
+              <h2>Travel Package</h2>
               <p>
                 Something you've never been
                 <br>
@@ -145,12 +124,7 @@
               style="background-image: url('frontend/images/popular-1.jpg')">
                 <div class="travel-country">INDONESIA</div>
                 <div class="travel-location">Komodo Island</div>
-                <div class="travel-button mt-auto">
-                  <a href="#" class="btn btn-travel-details 
-                  px-4">
-                    View Details
-                  </a>
-                </div>
+                <div class="travel-price">IDR 1.000.000/Person</div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3">
@@ -158,12 +132,7 @@
               style="background-image: url('frontend/images/popular-2.jpg')">
                 <div class="travel-country">INDONESIA</div>
                 <div class="travel-location">Mount Bromo</div>
-                <div class="travel-button mt-auto">
-                  <a href="#" class="btn btn-travel-details 
-                  px-4">
-                    View Details
-                  </a>
-                </div>
+                <div class="travel-price">IDR 700.000/Person</div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3">
@@ -171,12 +140,7 @@
               style="background-image: url('frontend/images/popular-3.jpg')">
                 <div class="travel-country">INDONESIA</div>
                 <div class="travel-location">Nusa Penida</div>
-                <div class="travel-button mt-auto">
-                  <a href="#" class="btn btn-travel-details 
-                  px-4">
-                    View Details
-                  </a>
-                </div>
+                <div class="travel-price">IDR 900.000/Person</div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3">
@@ -184,12 +148,7 @@
               style="background-image: url('frontend/images/popular-4.jpg')">
                 <div class="travel-country">INDONESIA</div>
                 <div class="travel-location">Labuan Bajo</div>
-                <div class="travel-button mt-auto">
-                  <a href="#" class="btn btn-travel-details 
-                  px-4">
-                    View Details
-                  </a>
-                </div>
+                <div class="travel-price">IDR 1.500.000/Person</div>
               </div>
             </div>
           </div>
@@ -240,7 +199,7 @@
               <div class="card card-testimonial text-center">
                 <div class="testimonial-content">
                   <img src="frontend/images/testimonial-1.png" alt="User" class="mb-4 rounded-circle">
-                  <h3 class="mb-4">James Brick</h3>
+                  <h3 class="mb-4">Arief Muhammad</h3>
                   <p class="testimonial">
                     "I am very thankful to Gotrave. My trip was fantastic. You were always there for me during trip. It was nice experience. Thanks for this..."
                   </p>
@@ -255,7 +214,7 @@
               <div class="card card-testimonial text-center">
                 <div class="testimonial-content">
                   <img src="frontend/images/testimonial-2.png" alt="User" class="mb-4 rounded-circle">
-                  <h3 class="mb-4">Sherlin Angela</h3>
+                  <h3 class="mb-4">Sarah Gibson</h3>
                   <p class="testimonial">
                     "Wonderful honeymoon trip to Nusa Penida. Travel agent from trip experts guiding us throughout and was in touch always. Thanks to Gotrave.."
                   </p>
@@ -282,14 +241,21 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section-contact-us" id="contactUs">
+        <div class="container">
           <div class="row">
-            <div class="col-12 text-center">
-              <a href="#" class="btn btn-need-help px-4 mt-4 mx-1">
-                I Need Help
-              </a>
-              <a href="#" class="btn btn-get-started px-4 mt-4 mx-1">
-                Get Started
-              </a>
+            <div class="col-md-4">
+              <h2>Contact Us</h2>
+              <iframe class="maps" id="contactMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.8013948163716!2d106.80940131476946!3d-6.289814995447666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zNsKwMTcnMjMuMyJTIDEwNsKwNDgnNDEuNyJF!5e0!3m2!1sid!2sid!4v1609167303057!5m2!1sid!2sid" width="1110" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <h3>How to reach us:</h3>
+              <p>If you need to speak with us, please contact us by phone or email</p>
+              <h3>Mobile</h3>
+              <p>0895 - 3600 - 67335</p>
+              <h3>E-mail</h3>
+              <p>Gotrave@support.co.id</p>
             </div>
           </div>
         </div>
@@ -298,48 +264,6 @@
 
     <!-- Footer -->
     <footer class="section-footer mt-5 mb-4 border-top">
-      <div class="container pt-5 pb-5">
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-12 col-lg-3">
-                <h5>FEATURES</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#">Reviews</a></li>
-                  <li><a href="#">Community</a></li>
-                  <li><a href="#">Social Media Kit</a></li>
-                  <li><a href="#">Affiliate</a></li>
-                </ul>
-              </div>
-              <div class="col-12 col-lg-3">
-                <h5>ACCOUNT</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#">Refund</a></li>
-                  <li><a href="#">Security</a></li>
-                  <li><a href="#">Rewards</a></li>
-                </ul>
-              </div>
-              <div class="col-12 col-lg-3">
-                <h5>COMPANY</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#">Career</a></li>
-                  <li><a href="#">Help Center</a></li>
-                  <li><a href="#">Media</a></li>
-                </ul>
-              </div>
-              <div class="col-12 col-lg-3">
-                <h5>GET CONNECTED</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#">Jakarta Selatan</a></li>
-                  <li><a href="#">Indonesia</a></li>
-                  <li><a href="#">0895 - 3600 - 67335</a></li>
-                  <li><a href="#">support@gotrave.id</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="footer-copyright container-fluid">
         <div class="row border-top justify-content-center align-items-center pt-4">
           <div class="col-auto text-gray-500 font-weight-light">
