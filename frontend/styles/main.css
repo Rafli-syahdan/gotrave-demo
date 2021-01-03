@@ -286,6 +286,9 @@ header h1 {
     font-weight: normal;
     font-size: 18px;
   }
+  .section-footer {
+    text-align: center;
+  }
   .section-footer h5 {
     font-weight: 500;
     font-size: 18px;
